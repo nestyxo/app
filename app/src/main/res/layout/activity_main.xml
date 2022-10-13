@@ -11,7 +11,7 @@
         android:id="@+id/QuestionTV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Which artists sung the song Empire State of Mind?" />
+        android:text="@string/q1text" />
 
     <EditText
         android:layout_width="match_parent"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/Finish"
-        android:text="Finish"
+        android:text="@string/finished"
         />
 
 

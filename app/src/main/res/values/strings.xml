@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">app</string>
+    <string name="app_name">Music Quiz App</string>
+    <string name="q1text">Which artists sung the song Empire State of Mind?</string>
+    <string name="wrong">you got it wrong</string>
+    <string name="right">you got it right</string>
+    <string name="finished">Finish</string>
+    <string name="ScoreTV">No Score</string>
 </resources>

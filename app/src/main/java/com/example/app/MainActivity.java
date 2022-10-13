@@ -3,6 +3,7 @@ package com.example.app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView questionTV;
     Button truebtn, falsebtn, Finish;
+    int Score;
 
 
     @Override
@@ -23,12 +25,14 @@ public class MainActivity extends AppCompatActivity {
         questionTV = (TextView) findViewById(R.id.QuestionTV);
          truebtn = (Button) findViewById(R.id.truebtn);
          falsebtn = (Button) findViewById(R.id.falsebtn);
+         Score = 0;
 
          truebtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Toast myToast = Toast.makeText(getApplicationContext(), "you got it right",Toast.LENGTH_LONG);
+                 Toast myToast = Toast.makeText(getApplicationContext(), getString(R.string.right),Toast.LENGTH_LONG);
                  myToast.show();
+                 Score = Score = 1;
 
 
              }
@@ -36,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
          falsebtn.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Toast myToast = Toast.makeText(getApplicationContext(),"you got it wrong", Toast.LENGTH_SHORT);
+                 Toast myToast = Toast.makeText(getApplicationContext(),getString(R.string.wrong), Toast.LENGTH_SHORT);
                  myToast.show();
 
                  
@@ -45,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
          Finish.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
+                 Intent myIntent = new Intent(MainActivity.this, ScoreActivity.class);
+                 myIntent.putExtra("score",Score);
+                 startActivity(myIntent);
 
              }
          });

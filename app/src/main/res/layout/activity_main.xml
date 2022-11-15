@@ -10,34 +10,37 @@
     <TextView
         android:id="@+id/QuestionTV"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/q1text" />
 
     <EditText
+        android:id="@+id/AnswerET"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/AnswerET"
 
 
-/>
-        <Button
-            android:id="@+id/buttonTRU"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+        />
+
+    <Button
+        android:id="@+id/truebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trutxt" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonFLSE"
+        android:id="@+id/falsebtn"
+        android:text="@string/falsetxt"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/Finish"
+        android:id="@+id/Next"
         android:text="@string/finished"
         />
+
 
 
 

@@ -1,8 +1,16 @@
 <resources>
     <string name="app_name">Music Quiz App</string>
-    <string name="q1text">Which artists sung the song Empire State of Mind?</string>
+    <string name="q1text">Jay Z and Alicia Keys sung the song Empire State of Mind</string>
     <string name="wrong">you got it wrong</string>
     <string name="right">you got it right</string>
-    <string name="finished">Finish</string>
+    <string name="finished">Next</string>
     <string name="ScoreTV">No Score</string>
+    <string name="trutxt">True</string>
+    <string name="falsetxt">False</string>
+    <string name="q2text">Jay z made the song called Song Cry</string>
+    <string name="q3text">Eminem sung the song Hotline Bling</string>
+    <string name="q4text">Already dead was sung by Abraham</string>
+    <string name="q5text">juice wrld sung the song Slim Shady</string>
+
+
 </resources>
